@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 5px solid;
+  width: 90%;
+  margin: 30px auto;
+  border: 5px solid;
+  display: flex;
+  align-items: center;
+}
+
+.element {
+  background-color: steelblue;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  transition: transform 1s;
+  transform-origin: top center;
+  /* center, top, bottom, right, left */
+}
+
+.container:hover .element {
+  transform: rotate(30deg) translate(200px);
+  /* transform: skewX(10deg);*/
+  /* transform: scaleX(2); */ /* 2 = 200% */
+  /* transform: rotate(180deg); */
+  /*  
+    0-360 deg
+    0-400 grad
+    0-6.2819 rad
+    0-1 turn
+  */
+
+  /* transform: translateX(100%);
+  z-index: -1; */
+  /* transform: translate(100%, 100%); */
+}

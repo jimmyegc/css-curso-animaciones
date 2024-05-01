@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  border: 3px solid;
+  margin: 0 auto;
+
+  /* transition: justify-content 2s; */
+}
+
+.container {
+  justify-content: flex-end;
+}
+
+.element {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+  margin: 20px;
+  clip-path: circle(80%);
+
+  transition-property: clip-path, transform, background-color, opacity;
+  transition-duration: 2s, 100ms;
+  /* transition: clip-path 2s, transform 1s; */
+}
+
+.container:hover .element {
+  clip-path: circle(20%);
+  transform: translate(100%);
+  background: #000;
+}
